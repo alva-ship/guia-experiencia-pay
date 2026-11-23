@@ -57,9 +57,9 @@ button{font-family:inherit}
 #menuBtn{display:none}
 
 /* Sidebar */
-.side{position:fixed;top:calc(var(--header-h) + env(safe-area-inset-top,0px));bottom:0;left:0;width:calc(var(--side-w) + env(safe-area-inset-left,0px));padding-left:env(safe-area-inset-left,0px);background:var(--surface);border-right:1px solid var(--line);overflow-y:auto;padding-block:16px 32px;z-index:40}
+.side{position:fixed;top:calc(var(--header-h) + env(safe-area-inset-top,0px));bottom:0;left:0;width:calc(var(--side-w) + env(safe-area-inset-left,0px));padding-left:env(safe-area-inset-left,0px);background:var(--accent-soft);border-right:1px solid var(--accent-border);overflow-y:auto;padding-block:16px 32px;z-index:40}
 .nav-link,.nav-group{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:40px;padding:8px 16px 8px 20px;border:0;background:transparent;color:var(--text);font-size:15px;line-height:20px;font-weight:500;text-decoration:none;text-align:left;cursor:pointer}
-.nav-link:hover,.nav-group:hover{background:var(--bg)}
+.nav-link:hover,.nav-group:hover{background:rgba(90,80,249,.08)}
 .nav-group svg{width:16px;height:16px;flex:none;transition:transform .15s}
 .nav-group[aria-expanded="true"] svg{transform:rotate(180deg)}
 .nav-items[hidden],.nav-secs[hidden]{display:none}
@@ -69,8 +69,8 @@ button{font-family:inherit}
 .nav-secs .nav-link.anchor{padding-left:44px}
 .nav-link.sub{font-weight:400;padding-left:36px;color:var(--text-2);font-size:15px}
 .nav-link.anchor{font-weight:400;padding-left:36px;color:var(--text-2);font-size:14px;min-height:36px}
-.nav-link[aria-current]{background:var(--accent-soft);color:var(--accent);font-weight:600;box-shadow:inset 3px 0 0 var(--accent)}
-.nav-divider{height:1px;background:var(--line);margin:12px 20px}
+.nav-link[aria-current]{background:var(--surface);color:var(--accent);font-weight:600;box-shadow:inset 3px 0 0 var(--accent)}
+.nav-divider{height:1px;background:var(--accent-border);margin:12px 20px}
 
 /* Main */
 main{margin-left:var(--side-w);padding-top:var(--header-h);min-width:0}
